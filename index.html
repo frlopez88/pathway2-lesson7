@@ -8,25 +8,24 @@
 </head>
 <body>
     <form>
-        <label>Name</label>
-        <input type="text" autocomplete="on">
+        <label>Full Name</label>
+        <input id="inputFullName" type="text">
+
+        <label>Email</label>
+        <input id="inputEmail" type="email">
 
         <label>Password</label>
-        <input type="password" autocomplete="on">
+        <input id="inputPass" type="password">
 
-        <label>LinkedIn URL</label>
-        <input type="url" autocomplete="on">
+        <label>Confirm Password</label>
+        <input id="inputConfirmationPass" type="password">
 
         <label>Age</label>
-        <input type="number" min="18" max="60" step="10" autocomplete="on" >
+        <input id="inputAge" type="number">
 
-        <label>Phone</label>
-        <input type="tel"  autocomplete="on">
-
-        <label>Meeting Date</label>
-        <input type="date"  min="2024-09-15" max="2024-09-21" disabled>
-
-        <button>Send</button>
+        <button onclick="formValidation()" >Send</button>
     </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
